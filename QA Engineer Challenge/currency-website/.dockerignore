@@ -1,0 +1,12 @@
+# Ignore everything
+**
+
+# Only allow:
+!/.npmrc
+!/package.json
+!/package-lock.json
+!/webpack.*
+!/.babelrc
+
+!/index.html
+!/src/**

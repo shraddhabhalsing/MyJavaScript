@@ -1,0 +1,48 @@
+{
+  "name": "currency-api",
+  "version": "1.0.0",
+  "description": "NodeJS API for currency conversion",
+  "author": "Adriana Luchian",
+  "license": "MIT",
+  "homepage": "https://github.com/aluchian/currency-api#readme",
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "jest --colors --passWithNoTests",
+    "start": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aluchian/currency-api.git"
+  },
+  "devDependencies": {
+    "eslint": "~6.8.0",
+    "jest": "~25.1.0",
+    "nodemon": "~2.0.2",
+    "watch": "~1.0.2"
+  },
+  "jest": {
+    "rootDir": "src"
+  },
+  "eslintConfig": {
+    "env": {
+      "node": true,
+      "jest": true,
+      "es6": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": 8,
+      "sourceType": "module"
+    },
+    "ignorePatterns": [
+      "node_modules/"
+    ]
+  },
+  "dependencies": {
+    "body-parser": "~1.19.0",
+    "cors": "~2.8.5",
+    "express": "~4.17.1",
+    "node-graceful": "~3.0.0"
+  }
+}
